@@ -17,9 +17,6 @@ namespace CdisMart_DAL
         {
             modelo = new CdisMartEntities();
         }
-
-
-
         public DataTable consultarUsuario(string nombre, string contraseña)
         {
             SqlConnection connection = new SqlConnection();
@@ -45,7 +42,6 @@ namespace CdisMart_DAL
 
             return dtUsuario;
         }
-
         public DataTable consultarUsuario(int IdUsuario)
         {
             SqlConnection connection = new SqlConnection();
@@ -80,6 +76,30 @@ namespace CdisMart_DAL
             command.CommandText = "sp_consultarUsuarios";
             command.Connection = connection;
 
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            DataTable dtUsuario = new DataTable();
+
+            connection.Open();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(dtUsuario);
+
+            connection.Close();
+
+            return dtUsuario;
+        }
+        public DataTable consultarUsuarioDuplicado(string nombre)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = @"Server=DESKTOP-Q82E1Q9\SQLEXPRESS;Database=CdisMart;Trusted_connection=true;";
+
+            SqlCommand command = new SqlCommand();
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "sp_consultarUsuarioDuplicado";
+            command.Connection = connection;
+
+            command.Parameters.AddWithValue("pNombre", nombre);
 
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable dtUsuario = new DataTable();

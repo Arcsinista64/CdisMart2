@@ -35,10 +35,6 @@
                     <asp:ImageButton  ID ="btnHistorial" CommandName="Historial" CommandArgument ='<%#Eval("AuctionId") %>' Height="25px" Width="25px" ImageUrl="~/imagenes/historial.png" runat ="server"/>
                 </ItemTemplate>
             </asp:TemplateField>
-
         </Columns>
-
     </asp:GridView>
-
-    
 </asp:Content>

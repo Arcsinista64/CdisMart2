@@ -11,7 +11,7 @@
               <div class="">
                     <asp:TextBox ID="txtNombreProducto" runat="server" MaxLength="50" placeholder="Marca, Modelo" class="form-control input-md"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvProducto" runat="server" ErrorMessage="Requerido" ControlToValidate="txtNombreProducto" ValidationGroup="vlg1"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="rfvnombreproducto" runat="server" ErrorMessage="Error. Ingrese nombre alfabètico (Max. 50 caracteres)." ControlToValidate="txtNombreProducto" ValidationExpression="^[a-zA-Z0-9]+(\s*[a-zA-Z]*)*[a-zA-Z]$" ValidationGroup="vlg1" Display="Dynamic"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="rfvnombreproducto" runat="server" ErrorMessage="Error. Nombre del producto sin caracteres especiales, por favor." ControlToValidate="txtNombreProducto" ValidationExpression="^[a-zA-Z0-9, ]*$" ValidationGroup="vlg1" Display="Dynamic"></asp:RegularExpressionValidator>
                     
               </div>
             </div>
@@ -21,7 +21,7 @@
               <div class="">
                   <asp:TextBox ID="txtDescripcionProducto" runat="server" MaxLength="100" placeholder="RAM, Almacenamiento, Componentes" class="form-control input-md"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="rfvDescripcion" runat="server" ErrorMessage="Requerido" ControlToValidate="txtDescripcionProducto" ValidationGroup="vlg1"></asp:RequiredFieldValidator>
-                  <asp:RegularExpressionValidator ID="rfvDescripcionProducto" runat="server" ErrorMessage="Error. Ingrese nombre alfabètico (Max. 100 caracteres)." ControlToValidate="txtDescripcionProducto" ValidationExpression="^[a-zA-Z0-9]+(\s*[a-zA-Z]*)*[a-zA-Z]$" ValidationGroup="vlg1" Display="Dynamic"></asp:RegularExpressionValidator>
+                  <asp:RegularExpressionValidator ID="rfvDescripcionProducto" runat="server" ErrorMessage="Error. Descripción sin caracteres especiales, por favor. (Máximo 100 caracteres)" ControlToValidate="txtDescripcionProducto" ValidationExpression="^[a-zA-Z0-9, ]*$" ValidationGroup="vlg1" Display="Dynamic"></asp:RegularExpressionValidator>
                   
               
               </div>
@@ -37,7 +37,7 @@
                   <asp:RequiredFieldValidator ID="rfvFechaInicio" runat="server" ErrorMessage="Requerido" ControlToValidate="txtFechaInicio" ValidationGroup="vlg1"></asp:RequiredFieldValidator>
                   <asp:CompareValidator ID="CompareValidator1" runat="server" Type="Date" Operator="DataTypeCheck" ControlToValidate="txtFechaInicio" ValidationGroup="vlg1" ErrorMessage="Error. Ingrese formato: (dd/mm/yyyy)." Display="Dynamic"></asp:CompareValidator>
                   <asp:RangeValidator ID="rvtxtHorasInicio" MinimumValue="0" MaximumValue="23" runat="server" ErrorMessage="Ingrese una hora valida. Considere formato 24 hrs." ControlToValidate="txtBoxHorasInicio" ValidationGroup="vlg1"></asp:RangeValidator>
-                  <asp:RangeValidator ID="rvtxtMinutosInicio" MinimumValue="0" MaximumValue="23" runat="server" ErrorMessage="Ingrese minutos válidos." ControlToValidate="txtBoxMinutosInicio" ValidationGroup="vlg1"></asp:RangeValidator>
+                  <asp:RangeValidator ID="rvtxtMinutosInicio" MinimumValue="0" MaximumValue="59" runat="server" ErrorMessage="Ingrese minutos válidos." ControlToValidate="txtBoxMinutosInicio" ValidationGroup="vlg1"></asp:RangeValidator>
                </div>
             </div>
 
@@ -50,8 +50,8 @@
                   <asp:TextBox ID="txtBoxMinutosFin" runat="server" placeholder="mm" class="form-control input-md"></asp:TextBox>
                   <asp:RequiredFieldValidator ID="rfvFechaFin" runat="server" ErrorMessage="Requerido" ControlToValidate="txtFechaFin" ValidationGroup="vlg1"></asp:RequiredFieldValidator>
                   <asp:CompareValidator ID="cv_rfvFechaFin" runat="server" Type="Date" Operator="DataTypeCheck" ControlToValidate="txtFechaFin" ValidationGroup="vlg1" ErrorMessage="Error. Ingrese formato: (dd/mm/yyyy hh:mm)." Display="Dynamic"></asp:CompareValidator>
-                  <asp:RangeValidator ID="rvtxtHorasFin" MinimumValue="0" MaximumValue="23" runat="server" ErrorMessage="Ingrese una hora valida. Considere formato 24 hrs." ControlToValidate="txtBoxHorasInicio" ValidationGroup="vlg1"></asp:RangeValidator>
-                  <asp:RangeValidator ID="rvtxtMinutosFin" MinimumValue="0" MaximumValue="23" runat="server" ErrorMessage="Ingrese minutos válidos." ControlToValidate="txtBoxMinutosInicio" ValidationGroup="vlg1"></asp:RangeValidator>
+                  <asp:RangeValidator ID="rvtxtHorasFin" MinimumValue="0" MaximumValue="23" runat="server" ErrorMessage="Ingrese una hora valida. Considere formato 24 hrs." ControlToValidate="txtBoxHorasFin" ValidationGroup="vlg1"></asp:RangeValidator>
+                  <asp:RangeValidator ID="rvtxtMinutosFin" MinimumValue="0" MaximumValue="59" runat="server" ErrorMessage="Ingrese minutos válidos." ControlToValidate="txtBoxMinutosFin" ValidationGroup="vlg1"></asp:RangeValidator>
               </div>
 
             </div>

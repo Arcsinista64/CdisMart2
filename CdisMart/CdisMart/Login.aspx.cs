@@ -48,7 +48,7 @@ namespace CdisMart
             if (dtUsuario.Rows.Count > 0)
             {
                 int Id_Usuario = usuario.UserId;
-                string nombreUsuario = usuario.Name;
+                string nombreUsuario = usuario.UserName;
                 Session["Usuario"] = dtUsuario;
                 Session["Id_Usuario"] = Id_Usuario;
                 Session["nombreUsuario"] = nombreUsuario;

@@ -7,13 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CdisMart.Vistas
-{
-
-
-    public partial class alta_usuario
-    {
-
+namespace CdisMart.Vistas {
+    
+    
+    public partial class alta_usuario {
+        
         /// <summary>
         /// Control txtNombreCompleto.
         /// </summary>
@@ -22,7 +20,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNombreCompleto;
-
+        
         /// <summary>
         /// Control rfvNombreCompleto.
         /// </summary>
@@ -31,7 +29,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNombreCompleto;
-
+        
         /// <summary>
         /// Control RegularExpressionValidator1.
         /// </summary>
@@ -40,7 +38,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
-
+        
         /// <summary>
         /// Control txtEmail.
         /// </summary>
@@ -49,7 +47,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-
+        
         /// <summary>
         /// Control RequiredFieldValidator2.
         /// </summary>
@@ -58,7 +56,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-
+        
         /// <summary>
         /// Control rev_correo.
         /// </summary>
@@ -67,7 +65,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator rev_correo;
-
+        
         /// <summary>
         /// Control txtUser.
         /// </summary>
@@ -76,7 +74,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUser;
-
+        
         /// <summary>
         /// Control RequiredFieldValidator3.
         /// </summary>
@@ -85,7 +83,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-
+        
         /// <summary>
         /// Control rfvUsuario.
         /// </summary>
@@ -94,7 +92,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator rfvUsuario;
-
+        
         /// <summary>
         /// Control txtPassword.
         /// </summary>
@@ -103,7 +101,7 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
-
+        
         /// <summary>
         /// Control RequiredFieldValidator4.
         /// </summary>
@@ -112,7 +110,16 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
-
+        
+        /// <summary>
+        /// Control revPassword.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revPassword;
+        
         /// <summary>
         /// Control txtPasswordConfirmacion.
         /// </summary>
@@ -121,7 +128,16 @@ namespace CdisMart.Vistas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPasswordConfirmacion;
-
+        
+        /// <summary>
+        /// Control rfvPssConfimation.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPssConfimation;
+        
         /// <summary>
         /// Control btnAgregar.
         /// </summary>
